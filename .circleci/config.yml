@@ -18,8 +18,5 @@ jobs:
           name: Run Test Coverage
           command: ./gradlew clean build jacocoTestReport
       - run:
-          name: See Jacoco Test Report
-          command: ls /home/circleci/code/library/build/reports/jacoco/test/html
-      - run:
           name: Upload to CodeCov
           command: bash <(curl -s https://codecov.io/bash)

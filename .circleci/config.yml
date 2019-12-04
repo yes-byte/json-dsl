@@ -16,7 +16,7 @@ jobs:
           command: ./gradlew test
       - run:
           name: Run Test Coverage
-          command: ./gradlew jacocoTestReport
+          command: ./gradlew clean build jacocoTestReport
       - run:
           name: See Jacoco Test Report
           command: ls /Users/hitanshudhawan/Desktop/JsonDSL/library/build/reports/jacoco/test/

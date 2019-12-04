@@ -19,7 +19,7 @@ jobs:
           command: ./gradlew clean build jacocoTestReport
       - run:
           name: See Jacoco Test Report
-          command: ls /Users/hitanshudhawan/Desktop/JsonDSL/library/build/reports/jacoco/test/
+          command: pwd
       - run:
           name: Upload to CodeCov
           command: bash <(curl -s https://codecov.io/bash)

@@ -15,9 +15,9 @@ dependencies {
     testImplementation "junit:junit:4.12"
 }
 
-jacoco {
-    toolVersion = "0.8.4"
-}
+//jacoco {
+//    toolVersion = "0.8.4"
+//}
 
 jacocoTestReport {
     reports {
